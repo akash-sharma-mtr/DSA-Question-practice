@@ -1,0 +1,11 @@
+class Solution:
+    def removeConsecutiveCharacter(self, s):
+        res = ''
+        prev = ''
+        
+        for chr in s :
+            if chr != prev:
+                res += chr
+            prev = chr
+        
+        return res
