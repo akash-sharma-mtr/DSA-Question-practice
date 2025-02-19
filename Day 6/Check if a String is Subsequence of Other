@@ -1,0 +1,16 @@
+class Solution:
+    
+    #Function to check if a string is subsequence of other string.
+    def isSubSequence(self, A, B):
+        #code here
+        i, j = 0, 0
+        while i<len(A) and j<len(B):
+            if A[i] == B[j]:
+                i += 1
+                j += 1
+            else :
+                j += 1
+        if i == len(A):
+            return True
+        else :
+            return False
